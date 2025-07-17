@@ -12,9 +12,7 @@ class student{
 	}
 	
 	public student(String name, int age) {
-		this.name = name;
-		this.age = age;
-		GPA = 0.0;
+		this(name, age, 0.0);
 	}
 	
 	public void displayGPA() {
@@ -25,7 +23,10 @@ class student{
 public class stu_GPA {
 
 	public static void main(String[] args) {
-		student s = new student("Sasi", 20, 7.23);
-		s.displayGPA();
+		student s1 = new student("Sasi", 20, 7.23);
+		student s2 = new student("Venky", 21);
+		s1.displayGPA();
+		s2.displayGPA();
+		
 	}
 }

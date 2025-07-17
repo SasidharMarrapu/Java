@@ -16,8 +16,7 @@ class Rectangle{
 public class Area_calculation {
 
 	public static void main(String[] args) {
-		Rectangle r = new Rectangle(3,4);
+		Rectangle r = new Rectangle(3.3,4.7);
 		r.CalculateArea();
-
 }
 }

@@ -16,7 +16,7 @@ class student{
 	}
 	
 	public void displayGPA() {
-		System.out.println("Student name is "+ name +" and GPA is: "+ GPA);
+		System.out.println("Student name is "+ name +" and Age is: "+ age +" and GPA is: "+ GPA);
 	}
 }
 

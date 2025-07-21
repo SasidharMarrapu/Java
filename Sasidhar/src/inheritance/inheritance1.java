@@ -1,4 +1,4 @@
-package Tasks;
+package inheritance;
 
 class rectangle{
 	int length, breadth;

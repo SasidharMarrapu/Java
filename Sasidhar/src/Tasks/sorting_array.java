@@ -3,7 +3,7 @@ package Tasks;
 public class sorting_array {
 
 	public static void main(String[] args) {
-		int[] data = {1,10,4,16,3,12,6,3,9};
+		int[] data = {1,2,3,0,4,9,6,7,0,1,2,3};
 		for(int i = 0; i < data.length; i++) {
 			System.out.print(data + " ");
 		}

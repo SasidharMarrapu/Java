@@ -4,7 +4,7 @@ public class search_element_array {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] array = {10,20,30,40,50,60,70};
+		int[] array = {1,2,3,0,4,9,6,7,0,1,2,3};
 
 		
 		System.out.println("Enter an element ro search: ");

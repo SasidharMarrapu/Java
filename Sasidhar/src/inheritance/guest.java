@@ -1,4 +1,4 @@
-package Tasks;
+package inheritance;
 
 public class guest {
 

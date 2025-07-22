@@ -1,11 +1,14 @@
 package Tasks;
-
+import java.util.Scanner;
 public class task_ternaryOperator {
 
 	public static void main(String[] args) {
 		boolean isLoggedIn = true;
-		String userType = "viewer";
-		String subscriptionStatus = "expired" ;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter userType: ");
+		String userType = sc.nextLine();
+		System.out.println("Enter subscriptionStatus: ");
+		String subscriptionStatus = sc.nextLine() ;
 		
 		String msg = !isLoggedIn ? "Please log in to continue" : 
 			userType.equals("admin") ? "welcome admin" : userType.equals("creator") ? 
@@ -15,8 +18,7 @@ public class task_ternaryOperator {
 								(subscriptionStatus.equals("active")? "Continue watching" :
 									subscriptionStatus.equals("expired") ? "Subscription Expired" 
 											: "Access Denied") : "Access denied";
-		System.out.println("Message: " + msg);
-
+		System.out.println("Homepage Message: " + msg);
+		sc.close();
 	}
-
 }

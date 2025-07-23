@@ -1,26 +1,26 @@
 package Tasks;
 
 import java.util.Scanner;
-public class prime {
+public class perfect_number {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number: ");
 		int num = sc.nextInt();
-		int count = 0;
+		int sum = 0;
 		
-		for(int i = 2; i < num; i++) {
+		for(int i = 1; i < num; i++) {
 			if(num % i == 0) {
-				count++;
+				sum += i;
 			}
 		}
-		
-		if(count == 0) {
-			System.out.println(num + " is a Prime number");
+		if(sum == num) {
+			System.out.println("Perfect number");
 		}
 		else {
-			System.out.println(num + " is not a prime number");
+			System.out.println("Not a Perfect number");
 		}
-
+		
 	}
 
 }

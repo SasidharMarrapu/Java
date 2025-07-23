@@ -77,8 +77,8 @@ public class studentPerformance {
 	 
 	            System.out.println("Department Average Score: " + departmentAvg); 
 	            System.out.println("Pass Percentage: " + passPercentage + "%"); 
-	            System.out.println("Topper: " + departmentTopper); 
+	            System.out.println("Topper: " + departmentTopper);
+	            
 	        } 
 	    } 
-
 }

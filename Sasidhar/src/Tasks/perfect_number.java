@@ -20,7 +20,5 @@ public class perfect_number {
 		else {
 			System.out.println("Not a Perfect number");
 		}
-		
 	}
-
 }

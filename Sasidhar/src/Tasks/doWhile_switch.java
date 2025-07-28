@@ -5,6 +5,8 @@ public class doWhile_switch {
 		Scanner sc = new Scanner(System.in);
 		int choice = 0;
 		int subchoice = 0;
+		String cart[] = new String[20];
+		int cartCount = 0;
 		
 		do {
 			System.out.println("1.Chocolates");
@@ -26,12 +28,17 @@ public class doWhile_switch {
 				System.out.println("Select your choice: ");
 				subchoice = sc.nextInt();
 				
+				if(cartCount < cart.length) {
 				switch(subchoice) {
-				case 1 -> System.out.println("You choose Dairy Milk");
-				case 2 -> System.out.println("You choose Kit Kat");
-				case 3 -> System.out.println("You choose 5-Star");
+				case 1 -> cart[cartCount++]="DairyMilk";
+				case 2 -> cart[cartCount++]="Kit Kat";
+				case 3 -> cart[cartCount++]="5-Star";
 				default -> System.out.println("Enter Chocolate Choice correctly");
 				}
+				}
+				else
+					System.out.println("Your cart is full.....");
+	
 			}
 			case 2 -> {
 				System.out.println("You selected CoolDrinks");
@@ -42,12 +49,16 @@ public class doWhile_switch {
 	            System.out.print("Select your CoolDrink: ");
 	            subchoice = sc.nextInt();
 	            
+	            if(cartCount < cart.length) {
 	            switch(subchoice) {
-	            case 1 -> System.out.println("You choose Coco-Cola");
-	            case 2 -> System.out.println("You choose Sprite");
-	            case 3 -> System.out.println("You choose Maaza");
+	            case 1 -> cart[cartCount++]="Coca-Cola";
+				case 2 -> cart[cartCount++]="Sprite";
+				case 3 -> cart[cartCount++]="Maaza";
 	            default -> System.out.println("Enter CoolDrink Choice correctly");
-	            }
+	            }}
+	            else
+	            	System.out.println("Your cart is full...");
+
 			}
 			
 			case 3 -> {
@@ -59,15 +70,28 @@ public class doWhile_switch {
 	            System.out.print("Select your Ice Cream: ");
 	            subchoice = sc.nextInt();
 	            
+	            if(cartCount < cart.length) {
 	            switch(subchoice) {
-	            case 1 -> System.out.println("You choose Vanilla");
-	            case 2 -> System.out.println("You choose Butterscotch");
-	            case 3 -> System.out.println("You choose Strawberry");
+	            case 1 -> cart[cartCount++]="Vanilla";
+				case 2 -> cart[cartCount++]="ButterScotch";
+				case 3 -> cart[cartCount++]="Strawberry";
 	            default -> System.out.println("Enter IceCream Choice correctly");
 	            }
+	            }
+	            else
+	            	System.out.println("Your cart is full...");
+
 			}
 			case 4 -> { 
-				System.out.println("Exiting....");
+				System.out.println("..Final cart..");
+				if(cartCount == 0) {
+					System.out.println("No items are selected.....Please select..");
+				}
+				else {
+					for(int i = 0;i < cartCount; i++) {
+						System.out.println("- "+cart[i]);
+					}
+				}
 			}
 			default -> System.out.println("Enter valid input between 1 to 4");
 			}

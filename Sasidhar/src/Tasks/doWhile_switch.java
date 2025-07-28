@@ -133,6 +133,7 @@ public class doWhile_switch {
 				System.out.println("..Final cart..");
 				if(cartCount == 0) {
 					System.out.println("No items are selected.....Please select..");
+					choice = 0;
 				}
 				else {
 					for(int i = 0;i < cartCount; i++) {

@@ -11,7 +11,7 @@ public class doWhile_switch {
 		int totalBill = 0;
 		
 		do {
-			System.out.println("1.Chocolates");
+			System.out.println("1.Chocolates");//
 			System.out.println("2.CoolDrinks");
 			System.out.println("3.IceCreams");
 			System.out.println("4.Exit");

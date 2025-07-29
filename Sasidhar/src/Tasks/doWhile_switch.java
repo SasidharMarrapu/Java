@@ -52,6 +52,7 @@ public class doWhile_switch {
 				}
 				default -> System.out.println("Enter Chocolate Choice correctly");
 				}
+				showCart(cart, prices, cartCount, totalBill);
 				}
 				else
 					System.out.println("Your cart is full.....");
@@ -87,7 +88,9 @@ public class doWhile_switch {
 					System.out.println("You selected Maaza");
 				}
 	            default -> System.out.println("Enter CoolDrink Choice correctly");
-	            }}
+	            }
+	            showCart(cart, prices, cartCount, totalBill);
+	            }
 	            else
 	            	System.out.println("Your cart is full...");
 
@@ -124,23 +127,21 @@ public class doWhile_switch {
 				}
 	            default -> System.out.println("Enter IceCream Choice correctly");
 	            }
+	            showCart(cart, prices, cartCount, totalBill);
 	            }
 	            else
 	            	System.out.println("Your cart is full...");
 
 			}
 			case 4 -> { 
-				System.out.println("..Final cart..");
 				if(cartCount == 0) {
 					System.out.println("No items are selected.....Please select..");
 					choice = 0;
 				}
 				else {
-					for(int i = 0;i < cartCount; i++) {
-						System.out.println("- "+cart[i]+" - "+prices[i]);
+					System.out.println("..Final Cart..");
+					showCart(cart, prices, cartCount, totalBill);
 					}
-					System.out.println("Total Bill is: "+ totalBill);
-				}
 			}
 			default -> System.out.println("Enter valid input between 1 to 4");
 			}
@@ -148,4 +149,15 @@ public class doWhile_switch {
 		sc.close();
 		System.out.println("THANK YOU...VISIT AGAIN");
 	}
+	
+	//Method to display cart and total Bill..
+	public static void showCart(String[] cart, int[] prices,int count,int total) {
+		System.out.println("Current Cart: ");
+		for(int i = 0;i < count; i++) {
+			System.out.println("- "+cart[i]+" - "+prices[i]);
+		}
+		System.out.println("Total Bill is: "+ total);
+		System.out.println();
+	}
+	
 }

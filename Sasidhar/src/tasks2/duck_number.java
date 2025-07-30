@@ -7,13 +7,13 @@ public class duck_number {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number: ");
 		int number = sc.nextInt();
-		int digit = 0;
+		int digit = 1;
 		boolean isDuck = false;
 		
-		if(number == 0) {
-			System.out.println("Not a Duck number");
-			return;
-		}
+//		if(number == 0) {
+//			System.out.println("Not a Duck number");
+//			return;
+//		}
 		
 		while(number > 0) {
 			digit = number % 10;

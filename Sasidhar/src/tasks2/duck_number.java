@@ -6,25 +6,17 @@ public class duck_number {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number: ");
-		int number = sc.nextInt();
-		int digit = 1;
-		boolean isDuck = false;
+		String number = sc.next();
+	
 		
-//		if(number == 0) {
-//			System.out.println("Not a Duck number");
-//			return;
-//		}
-		
-		while(number > 0) {
-			digit = number % 10;
-			if(digit == 0) {
-				isDuck = true;
-			}
-			number = number / 10;
+		if(number.charAt(0)=='0') {
+			System.out.println("Not a Duck number");
 		}
-		if(isDuck)
+		else if(number.contains("0")) {
 			System.out.println("Duck number");
-		else
-			System.out.println("Not a duck number");
+		}
+		else {
+			System.out.println("Not a Duck number");
+		}
 	}
 }

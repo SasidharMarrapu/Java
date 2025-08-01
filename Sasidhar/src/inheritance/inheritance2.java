@@ -1,6 +1,5 @@
 package inheritance;
 
-
 class Employee {
  String name;
  int empId;
@@ -12,8 +11,6 @@ class Employee {
      basicSalary = salary;
  }
 }
-
-
 class SalaryCalculator extends Employee {
  double hra, da, grossSalary;
 
@@ -32,9 +29,6 @@ class SalaryCalculator extends Employee {
      System.out.println("Gross Salary: " + grossSalary);
  }
 }
-
-
-
 public class inheritance2 {
 
 	public static void main(String[] args) {
@@ -42,7 +36,5 @@ public class inheritance2 {
 	     emp.setEmployeeDetails("John", 101, 30000);  // Example values
 	     emp.calculateSalary();
 	     emp.displayDetails();
-
 	}
-
 }

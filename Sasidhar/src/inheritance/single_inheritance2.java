@@ -2,18 +2,12 @@ package inheritance;
 
 class Vehicle{
 	String type = "Vehicle";
-	Vehicle(){
-		this.type = type;
-	}
 	public void displayType() {
 		System.out.println("Displaying the type: "+type);
 	}
 }
 class Car extends Vehicle{
 	String type = "Car";
-	Car(){
-		this.type = type;
-	}
 	public void displayCarType() {
 		System.out.println("Displaying the vehicle type: "+type);
 	}

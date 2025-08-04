@@ -23,7 +23,7 @@ public class StudentDetails {
 
 	public static void main(String[] args) {
 		Student s1 = new Student("Sasi");
-		Student s2 = new Student("Venky",21);
+		Student s2 = new Student("Dinesh",21);
 		Student s = new Student(); 
 		System.out.println("name is: "+ s.name + " and age is: "+s.age);
 		System.out.println("name is: "+ s1.name + " and age is: "+s1.age);

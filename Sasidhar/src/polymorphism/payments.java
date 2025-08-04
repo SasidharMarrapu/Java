@@ -30,7 +30,6 @@ class WalletPayment extends payment{
 	}
 }
 
-
 public class payments {
 
 	public static void main(String[] args) {
@@ -52,5 +51,4 @@ public class payments {
 		wallet.processPayment();
 		
 	}
-
 }

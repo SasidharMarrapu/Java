@@ -1,4 +1,4 @@
-package Tasks;
+package arrays;
 import java.util.Scanner;
 public class update_array {
 

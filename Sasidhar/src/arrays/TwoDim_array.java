@@ -1,4 +1,4 @@
-package Tasks;
+package arrays;
 
 public class TwoDim_array {
 // we are directly taking the array elements

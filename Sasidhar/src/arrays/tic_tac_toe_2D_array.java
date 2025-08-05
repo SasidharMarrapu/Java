@@ -1,4 +1,4 @@
-package Tasks;
+package arrays;
 
 public class tic_tac_toe_2D_array {
 

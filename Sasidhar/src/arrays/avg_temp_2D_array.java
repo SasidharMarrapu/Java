@@ -1,4 +1,4 @@
-package Tasks;
+package arrays;
 
 public class avg_temp_2D_array {
 

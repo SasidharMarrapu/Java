@@ -1,4 +1,4 @@
-package Tasks;
+package arrays;
 
 public class twoD_array {
 

@@ -1,4 +1,4 @@
-package Tasks;
+package arrays;
 
 public class attendence_2D_array {
 

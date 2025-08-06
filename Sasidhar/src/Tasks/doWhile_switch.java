@@ -93,7 +93,6 @@ public class doWhile_switch {
 	            }
 	            else
 	            	System.out.println("Your cart is full...");
-
 			}
 			
 			case 3 -> {
@@ -159,5 +158,4 @@ public class doWhile_switch {
 		System.out.println("Total Bill is: "+ total);
 		System.out.println();
 	}
-	
 }

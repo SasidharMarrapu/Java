@@ -8,7 +8,6 @@ public class duck_number {
 		System.out.println("Enter a number: ");
 		String number = sc.next();
 	
-		
 		if(number.charAt(0)=='0') {
 			System.out.println("Not a Duck number");
 		}

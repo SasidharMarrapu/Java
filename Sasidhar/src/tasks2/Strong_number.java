@@ -28,5 +28,4 @@ public class Strong_number {
 		}
 		return fact;
 	}
-
 }

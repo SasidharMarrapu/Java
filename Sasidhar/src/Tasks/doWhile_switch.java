@@ -56,8 +56,8 @@ public class doWhile_switch {
 				}
 				else
 					System.out.println("Your cart is full.....");
-	
 			}
+			
 			case 2 -> {
 				System.out.println("You selected CoolDrinks");
 				System.out.println("Available CoolDrinks...");
@@ -130,7 +130,6 @@ public class doWhile_switch {
 	            }
 	            else
 	            	System.out.println("Your cart is full...");
-
 			}
 			case 4 -> { 
 				if(cartCount == 0) {

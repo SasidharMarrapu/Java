@@ -22,7 +22,5 @@ public class sorting_array {
 		for(int num: data) {
 			System.out.println(num + " ");
 		}
-
 	}
-
 }

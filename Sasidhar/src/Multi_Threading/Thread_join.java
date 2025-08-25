@@ -19,10 +19,12 @@ public class Thread_join extends Thread {
 		t1.setName("Thread1");
 		t1.start();
 		t1.join();//join()  makes one thread wait until another finishes.
+		
 		Thread_join t2 = new Thread_join();
 		t2.setName("Thread2");
 		t2.start();
 		t2.join();
+		
 		Thread_join t3 = new Thread_join();
 		t3.setName("Thread3");
 		t3.start();

@@ -12,9 +12,9 @@ public class Vector_legacyClass {
 		while(e.hasMoreElements()) {
 			System.out.println(e.nextElement());
 		}
-		Iterator i = v.iterator();
-		while(i.hasNext()) {
-			System.out.println(i.next());
-		}
+//		Iterator i = v.iterator();
+//		while(i.hasNext()) {
+//			System.out.println(i.next());
+//		}
 	}
 }

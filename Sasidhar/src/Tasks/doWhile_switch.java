@@ -11,7 +11,7 @@ public class doWhile_switch {
 		int totalBill = 0;
 		
 		do {
-			System.out.println("1.Chocolates");//
+			System.out.println("1.Chocolates");
 			System.out.println("2.CoolDrinks");
 			System.out.println("3.IceCreams");
 			System.out.println("4.Exit");
@@ -152,7 +152,7 @@ public class doWhile_switch {
 	public static void showCart(String[] cart, int[] prices,int count,int total) {
 		System.out.println("Current Cart: ");
 		for(int i = 0;i < count; i++) {
-			System.out.println("- "+cart[i]+" - "+prices[i]);
+			System.out.println(" - "+cart[i]+" - "+prices[i]);
 		}
 		System.out.println("Total Bill is: "+ total);
 		System.out.println();
